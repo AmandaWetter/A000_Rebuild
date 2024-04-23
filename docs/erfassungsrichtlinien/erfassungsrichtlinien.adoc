@@ -1,5 +1,5 @@
 // Hier den Titel eingeben
-:title: <Titel der Modelldokumentation> 
+:title: Erfassungsrichtlinie 
 :subtitle: <Untertitel der Dokumentation>
 ifdef::backend-pdf[]
 = {title}
@@ -39,8 +39,8 @@ image:../../themes/logo_kt_sz_rgb.jpg[]
 
 * https://ch-sz-geo.github.io/A000_entrypage/[zur Startseite] +
 * https://amandawetter.github.io/A000_Rebuild/[Übersicht A000 Dokumentation] +
-* https://github.com/ch-sz-geo/A000_template/tree/main/data[Übersicht Daten] +
-* https://github.com/ch-sz-geo/A000_template/tree/main/models[Übersicht Modell] +
+* https://github.com/AmandaWetter/A000_Rebuild/tree/main/data[Übersicht Daten] +
+* https://github.com/AmandaWetter/A000_Rebuild/tree/main/models[Übersicht Modell] +
 * https://ch-sz-geo.github.io/A000_template/ebook.pdf[Dokumentation als Pdf] +
 
 ****

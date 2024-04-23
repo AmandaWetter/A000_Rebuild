@@ -1,5 +1,5 @@
 // Hier den Titel eingeben
-:title: <Titel der Modelldokumentation> 
+:title: Modelldokumentation 
 :subtitle: <Untertitel der Dokumentation>
 ifdef::backend-pdf[]
 = {title}

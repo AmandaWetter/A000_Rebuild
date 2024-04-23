@@ -51,5 +51,5 @@ jobs:
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Action"
-          git add src/modelldokumentation.html
+          git add docs/modelldokumentation.html
           git diff-index --quiet HEAD || git commit -m "Generate HTML from AsciiDoc" && git push

@@ -5,7 +5,7 @@ ifdef::backend-pdf[]
 = {title}
 {subtitle}
 :title-logo-image: image:./themes/header_sz_pdf.PNG[top=-10%,align=center,width=fill]
-:pdf-theme: themes/pdf-theme.yml
+:pdf-theme: ../../themes/pdf-theme.yml
 :pdf-fontsdir: fonts/
 endif::[]
 ifndef::env-github[:toc: left]
@@ -21,7 +21,7 @@ ifndef::env-github[:toc: left]
 :sectlinks:
 :sectanchors:
 // :includedir: docs
-:stylesheet: themes/stylesheet.css
+:stylesheet: ../../themes/stylesheet.css
 :doctype: book
 :!chapter-signifier:
 
@@ -38,7 +38,9 @@ image:../../themes/logo_kt_sz_rgb.jpg[]
 ****
 
 * https://ch-sz-geo.github.io/A000_entrypage/[zur Startseite] +
-* https://github.com/ch-sz-geo/A000_template/tree/main/data[Übersicht Modelle] +
+* https://amandawetter.github.io/A000_Rebuild/[Übersicht A000 Dokumentation] +
+* https://github.com/ch-sz-geo/A000_template/tree/main/data[Übersicht Daten] +
+* https://github.com/ch-sz-geo/A000_template/tree/main/models[Übersicht Modell] +
 * https://ch-sz-geo.github.io/A000_template/ebook.pdf[Dokumentation als Pdf] +
 
 ****

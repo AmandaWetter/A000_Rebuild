@@ -38,7 +38,9 @@ image:../../themes/logo_kt_sz_rgb.jpg[]
 ****
 
 * https://ch-sz-geo.github.io/A000_entrypage/[zur Startseite] +
-* https://github.com/ch-sz-geo/A000_template/tree/main/data[Übersicht Modelle] +
+* https://amandawetter.github.io/A000_Rebuild/[Übersicht A000 Dokumentation] +
+* https://github.com/ch-sz-geo/A000_template/tree/main/data[Übersicht Daten] +
+* https://github.com/ch-sz-geo/A000_template/tree/main/models[Übersicht Modell] +
 * https://ch-sz-geo.github.io/A000_template/ebook.pdf[Dokumentation als Pdf] +
 
 ****

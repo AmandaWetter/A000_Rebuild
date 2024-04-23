@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: A00 Pages Publish
+name: A000 Pages Publish
 
 # Controls when the workflow will run
 on:

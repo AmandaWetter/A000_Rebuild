@@ -172,3 +172,39 @@ th {
 	background-color: #00FF00;
 	height: 0px !important;	
 }
+
+#header-table {
+	width: 100%;
+	border-left: white;
+	border-right: white;
+}
+
+#header-departement{
+	margin-left: 400px;
+	color: black;
+}
+
+#header-amt {
+	vertical-align: top;
+	width: 35%;
+	min-width: max-content; 
+}
+
+#header-amt > h3{
+	margin: 0px 0px 0px 400px;
+	padding: 0px;
+ }
+ 
+ #header-address {
+	padding-bottom: 20px; 
+ }
+ 
+ #header-logo {
+	width: max-content;
+	text-align: right;
+	padding-right: 400px;
+ }
+ 
+ #second-row{
+	 margin-bottom: 40px;
+ }

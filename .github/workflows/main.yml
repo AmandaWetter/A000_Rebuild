@@ -47,3 +47,15 @@ jobs:
           git add docs/modelldokumentation.html
           git add docs/erfassungsrichtlinien.html
           git diff-index --quiet HEAD || git commit -m "Generate HTML from AsciiDoc" && git push
+  
+  push_ili:
+    runs-on: ubuntu-latest
+    permissions: 
+      contents: write
+      pull-requests: write
+      pages: write
+    
+    steps:
+      - uses: actions/checkout@v3
+      - name: move-File
+        run: echo 'Hello Again'

@@ -58,4 +58,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: move-File
-        run: echo 'Hello Again'
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_file: 'index.html'
+          destination_repo: 'ch-sz-geo/A000_entrypage'
+        destination_folder: 'data'
+        user_email: 'amanda.wetter@sz.ch'
+        user_name: 'AmandaWetter'
+        commit_message: 'Push a Modell from another Repo'

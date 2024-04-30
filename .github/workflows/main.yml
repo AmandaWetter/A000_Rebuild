@@ -15,15 +15,13 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-    permissions: 
-      contents: write
-      pull-requests: write
-      pages: write
+  runs-on: ubuntu-latest
+  permissions: 
+    contents: write
+    pull-requests: write
+    pages: write
     
+  build:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -48,13 +46,7 @@ jobs:
           git add docs/erfassungsrichtlinien.html
           git diff-index --quiet HEAD || git commit -m "Generate HTML from AsciiDoc" && git push
   
-  push_ili:
-    runs-on: ubuntu-latest
-    permissions: 
-      contents: write
-      pull-requests: write
-      pages: write
-    
+  push_ili:   
     steps:
       - uses: actions/checkout@v3
       - name: move-File

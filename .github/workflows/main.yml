@@ -64,7 +64,7 @@ jobs:
         with:
           source_file: 'index.html'
           destination_repo: 'ch-sz-geo/A000_entrypage'
-        destination_folder: 'data'
-        user_email: 'amanda.wetter@sz.ch'
-        user_name: 'AmandaWetter'
-        commit_message: 'Push a Modell from another Repo'
+          destination_folder: 'data'
+          user_email: 'amanda.wetter@sz.ch'
+          user_name: 'AmandaWetter'
+          commit_message: 'Push a Modell from another Repo'

@@ -21,7 +21,7 @@ ifndef::env-github[:toc: left]
 :sectlinks:
 :sectanchors:
 // :includedir: docs
-//:stylesheet: ../../themes/stylesheet.css
+:stylesheet: ../../themes/stylesheet.css
 :doctype: book
 :!chapter-signifier:
 
@@ -37,11 +37,9 @@ image:../../themes/logo_kt_sz_rgb.jpg[]
 
 ****
 
-* https://ch-sz-geo.github.io/A000_entrypage/[zur Startseite] +
-* https://amandawetter.github.io/A000_Rebuild/[Übersicht A000 Dokumentation] +
-* https://github.com/AmandaWetter/A000_Rebuild/tree/main/data[Übersicht Daten] +
-* https://github.com/AmandaWetter/A000_Rebuild/tree/main/models[Übersicht Modell] +
-* https://ch-sz-geo.github.io/A000_template/ebook.pdf[Dokumentation als Pdf] +
+* https://ch-sz-geo.github.io/A000_entrypage/[zur Hauptseite] +
+* https://amandawetter.github.io/A000_Rebuild/[Übersicht AXXX Dokumentation] +
+* https://amandawetter.github.io/A000_Rebuild/docs/erfassungsrichtlinien.pdf[Erfassungsrichtlinie als Pdf] +
 
 ****
 endif::[]

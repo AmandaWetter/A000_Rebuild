@@ -50,7 +50,7 @@ jobs:
           git config --global user.name "GitHub Action"
           git add .
           git diff-index --quiet HEAD || git commit -m "Generate HTML from AsciiDoc" && git push
-          
+
   pushEntrypage:
     runs-on: ubuntu-latest
     permissions:
@@ -62,8 +62,6 @@ jobs:
       uses: actions/checkout@v2
     - name: Push File
       uses: dmnemec/copy_file_to_another_repo_action@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
       with: 
         source_file: 'data/TestdoBliblablo.pdf'
         destination_repo: 'ch-sz-geo/A000_entrypage'

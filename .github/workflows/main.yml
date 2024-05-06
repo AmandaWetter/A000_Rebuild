@@ -61,13 +61,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Set GitHub CLI Token
-      env:
-        GH_TOKEN: ${{ secrets.Access_SZ }}
     - name: Push File
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:
-        API_TOKEN_GITHUB: GH_TOKEN
+        API_TOKEN_GITHUB: ${{ secrets.Access_SZ }}
       with: 
         source_file: 'docs/modelldokumentation.pdf'
         destination_repo: 'ch-sz-geo/A000_entrypage'

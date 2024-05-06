@@ -59,7 +59,7 @@ jobs:
       issues: write
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v1
     - name: Push File
       uses: dmnemec/copy_file_to_another_repo_action@main
       with: 

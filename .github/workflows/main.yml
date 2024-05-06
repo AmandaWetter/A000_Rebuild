@@ -64,11 +64,9 @@ jobs:
     - name: Push File
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.API_GITHUB_TOKEN}}
+        API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN}}
       with: 
         source_file: 'docs/'
         destination_repo: 'ch-sz-geo/A000_entrypage'
         destination_folder: 'data'
-        user_email: ${{secrets.USER_EMAIL}}
-        user_name: ${{secrets.USER_NAME}}
         commit_message: 'Update Data Files'

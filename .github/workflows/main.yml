@@ -64,7 +64,7 @@ jobs:
     - name: Push File
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.ENTRYPAGE_SECRET}}
+        API_TOKEN_GITHUB: ${{ secrets.API_GITHUB_TOKEN}}
       with: 
         source_file: 'docs/modelldokumentation.pdf'
         destination_repo: 'ch-sz-geo/A000_entrypage'

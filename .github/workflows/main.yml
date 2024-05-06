@@ -53,6 +53,7 @@ jobs:
 
   pushEntrypage:
     runs-on: ubuntu-latest
+    depends-on: build
     permissions:
       contents: read
       pull-requests: write

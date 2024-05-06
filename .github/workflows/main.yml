@@ -63,7 +63,7 @@ jobs:
     - name: Push File
       uses: dmnemec/copy_file_to_another_repo_action@main
       with: 
-        source_file: 'data/TestdoBliblablo.pdf'
+        source_file: 'data/TestdocBliblablo.pdf'
         destination_repo: 'ch-sz-geo/A000_entrypage'
         destination_folder: 'data'
         user_email: 'actions@github.com'

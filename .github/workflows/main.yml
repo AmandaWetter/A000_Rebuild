@@ -64,11 +64,11 @@ jobs:
     - name: Push File
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN}}
+        API_TOKEN_GITHUB: ${{ secrets.PUSH_INPUT_MODELS}}
       with: 
         source_file: 'docs/modelldokumentation.pdf'
         destination_repo: 'ch-sz-geo/A000_entrypage'
         destination_folder: 'data'
-        user_email: 'actions@github.com'
-        user_name: 'GitHub Action'
+        user_email: 'amanda.wetter@sz.ch'
+        user_name: 'AmandaWetter'
         commit_message: 'Update Data Files'

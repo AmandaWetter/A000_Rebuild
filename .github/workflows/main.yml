@@ -69,6 +69,6 @@ jobs:
         source_file: 'docs/modelldokumentation.pdf'
         destination_repo: 'ch-sz-geo/A000_entrypage'
         destination_folder: 'data'
-        user_email: 'amanda.wetter@sz.ch'
-        user_name: 'AmandaWetter'
+        user_email: 'actions@github.com'
+        user_name: 'GitHub Action'
         commit_message: 'Update Data Files'

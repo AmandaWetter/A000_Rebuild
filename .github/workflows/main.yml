@@ -53,13 +53,17 @@ jobs:
 jobs:
   pushEntrypage:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
     steps:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Push File
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
       with: 
         source_file: 'data/TestdoBliblablo.pdf'
         destination_repo: 'ch-sz-geo/A000_entrypage'

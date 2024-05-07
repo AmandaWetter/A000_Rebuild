@@ -23,6 +23,11 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+    - name: Set environment variables
+      run: |
+        set -o allexport
+        source .env
+        set +o allexport
     - name: Push File
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:
@@ -31,6 +36,6 @@ jobs:
         source_file: 'models/.'
         destination_repo: 'ch-sz-geo/A000_entrypage'
         destination_folder: 'models'
-        user_email: ${{secrets.USER_EMAIL}}
-        user_name: ${{secrets.USER_NAME}}
+        user_email: ${{env.USER_EMAIL}}
+        user_name: ${{env.USER_NAME}}
         commit_message: 'Update Data Files'

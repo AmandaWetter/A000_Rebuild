@@ -24,10 +24,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Set environment variables
-        run: |
-          set -o allexport
-          source .env
-          set +o allexport
+      run: |
+        set -o allexport
+        source .env
+        set +o allexport
     - name: print echo
       run: echo "The value of USER_EMAIL is ${{env.USER_EMAIL}}"
     - name: Push File

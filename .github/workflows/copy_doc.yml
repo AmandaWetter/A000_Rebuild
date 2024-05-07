@@ -24,20 +24,16 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     
-    - name: Set up Python
-      uses: actions/setup-python@v2
+    - name: Load environment variables
+      uses: smockle/action-load-environment-variables@v1
       with:
-        python-version: '3.x'
+        path: .env
 
-    - name: Set environment variables
+    - name: Print environment variables
       run: |
-        set -a
-        source .env
-        echo "Loaded environment variables:"
-        echo "USER_EMAIL: ${{env.USER_EMAIL}}"
-        set +a
-    - name: Print contents of .env file
-      run: cat .env
+        echo "USER_NAME: $USER_NAME"
+        echo "USER_EMAIL: $USER_EMAIL"
+   
     - name: print echo
       run: echo "The value of USER_EMAIL is ${{env.USER_EMAIL}}"
     - name: Push File

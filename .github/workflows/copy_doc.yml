@@ -27,7 +27,7 @@ jobs:
       run: |
          export $(cat ../vars.yaml | sed 's/^/export /')
     - name: print echo
-      run: echo "The value of USER_EMAIL is $USER_EMAIL"
+      run: echo "The value of USER_EMAIL is ${{env.USER_EMAIL}}"
     - name: Debug vars.yaml content
       run: cat vars.yaml
     - name: Push File

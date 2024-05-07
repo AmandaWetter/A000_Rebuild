@@ -31,9 +31,10 @@ jobs:
 
     - name: Set environment variables
       run: |
-        set -o allexport
-        source ../../.env
-        set +o allexport
+        cd ..
+        set -a
+        source .env
+        set +a
     - name: print echo
       run: echo "The value of USER_EMAIL is ${{env.USER_EMAIL}}"
     - name: Push File

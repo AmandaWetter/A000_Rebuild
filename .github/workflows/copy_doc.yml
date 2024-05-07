@@ -24,12 +24,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Set environment variables
-      run: |
-         export $(cat ../vars.yaml | sed 's/^/export /')
+        run: |
+          set -o allexport
+          source .env
+          set +o allexport
     - name: print echo
       run: echo "The value of USER_EMAIL is ${{env.USER_EMAIL}}"
-    - name: Debug vars.yaml content
-      run: cat vars.yaml
     - name: Push File
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:

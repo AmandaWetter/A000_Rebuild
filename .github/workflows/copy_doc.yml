@@ -34,12 +34,12 @@ jobs:
         set -a
         source .env
         echo "Loaded environment variables:"
-        echo "USER_EMAIL: $USER_EMAIL"
+        echo "USER_EMAIL: ${{USER_EMAIL}}"
         set +a
     - name: Print contents of .env file
       run: cat .env
     - name: print echo
-      run: echo "The value of USER_EMAIL is $env.USER_EMAIL"
+      run: echo "The value of USER_EMAIL is ${{env.USER_EMAIL}}"
     - name: Push File
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:

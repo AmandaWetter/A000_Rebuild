@@ -28,7 +28,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_GITHUB_TOKEN}}
       with: 
-        source_file: 'models/{*}'
+        source_file: 'models/.'
         destination_repo: 'ch-sz-geo/A000_entrypage'
         destination_folder: 'models'
         user_email: ${{secrets.USER_EMAIL}}

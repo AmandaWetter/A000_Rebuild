@@ -25,7 +25,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Set environment variables
       run: |
-         export $(cat ../../vars.yaml | sed 's/^/export /')
+         export $(cat ../../../vars.yaml | sed 's/^/export /')
     - name: print echo
       run: echo "The value of USER_EMAIL is $USER_EMAIL"
     - name: Push File

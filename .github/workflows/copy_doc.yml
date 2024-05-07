@@ -31,10 +31,11 @@ jobs:
 
     - name: Set environment variables
       run: |
-        cd ..
         set -a
         source .env
         set +a
+    - name: Print contents of .env file
+      run: cat .env
     - name: print echo
       run: echo "The value of USER_EMAIL is ${{env.USER_EMAIL}}"
     - name: Push File

@@ -24,11 +24,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     
-    - name: Load environment variables
-      uses: iam4x/load-env-vars-action@v2
+    - name: export env
+      uses: cardinalby/export-env-action@v1
       with:
-         env-file: .env
-
+        envFile: '.env'    
+        expand: 'true'
     - name: Print environment variables
       run: |
         echo "USER_NAME: $USER_NAME"

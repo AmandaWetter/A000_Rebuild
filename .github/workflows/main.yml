@@ -9,7 +9,6 @@ on:
     paths:
       - 'docs/*'
       - 'themes/*'
-      - 'README.adoc'
       - 'index.html'
   pull_request:
     branches: [ master, main ]

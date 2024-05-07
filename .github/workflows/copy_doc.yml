@@ -23,19 +23,11 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    
     - name: export env
       uses: cardinalby/export-env-action@v1
       with:
         envFile: '.env'    
         expand: 'true'
-    - name: Print environment variables
-      run: |
-        echo "USER_NAME: $USER_NAME"
-        echo "USER_EMAIL: $USER_EMAIL"
-   
-    - name: print echo
-      run: echo "The value of USER_EMAIL is ${{env.USER_EMAIL}}"
     - name: Push File
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:

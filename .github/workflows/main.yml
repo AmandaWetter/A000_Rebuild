@@ -1,4 +1,4 @@
-name: A000 Pages Publish
+name: Pages Publish
 
 # Controls when the workflow will run
 on:
@@ -50,25 +50,3 @@ jobs:
           git config --global user.name "GitHub Action"
           git add .
           git diff-index --quiet HEAD || git commit -m "Generate HTML from AsciiDoc" && git push
-
-  pushEntrypage:
-    runs-on: ubuntu-latest
-    needs: build
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Push File
-      uses: dmnemec/copy_file_to_another_repo_action@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.API_GITHUB_TOKEN}}
-      with: 
-        source_file: 'data/test.ili'
-        destination_repo: 'ch-sz-geo/A000_entrypage'
-        destination_folder: 'data'
-        user_email: ${{secrets.USER_EMAIL}}
-        user_name: ${{secrets.USER_NAME}}
-        commit_message: 'Update Data Files'

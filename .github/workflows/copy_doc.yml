@@ -26,8 +26,10 @@ jobs:
     - name: Set environment variables
       run: |
         set -o allexport
-        source ../../.env
+        source .env
         set +o allexport
+    - name: print echo
+      run: echo "The value of USER_EMAIL is $USER_EMAIL"
     - name: Push File
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:

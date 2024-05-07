@@ -22,11 +22,11 @@ jobs:
       issues: write
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Set environment variables
       run: |
         set -o allexport
-        source ../.env
+        source ../../.env
         set +o allexport
     - name: print echo
       run: echo "The value of USER_EMAIL is ${{env.USER_EMAIL}}"

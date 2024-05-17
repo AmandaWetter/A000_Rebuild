@@ -3,7 +3,7 @@ extends: base
 font:
   catalog:
     merge: false
-    Trade Gothic:
+    Trade Gothic: 
       normal: tradegothic-normal.ttf
       bold: tradegothic-bold.ttf
       light: tradegothic-light.ttf
